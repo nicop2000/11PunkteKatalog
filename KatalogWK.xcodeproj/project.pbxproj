@@ -44,6 +44,7 @@
 		DA6FC1BE291EF3CE00800EAC /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6FC1BC291EF3CE00800EAC /* Tag+CoreDataProperties.swift */; };
 		DA6FC1C1291EF3FF00800EAC /* Angel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6FC1BF291EF3FF00800EAC /* Angel+CoreDataClass.swift */; };
 		DA6FC1C2291EF3FF00800EAC /* Angel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6FC1C0291EF3FF00800EAC /* Angel+CoreDataProperties.swift */; };
+		DA6FC1C4291FBFB200800EAC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA6FC1C3291FBFB200800EAC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		DA6FC1BC291EF3CE00800EAC /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Tag+CoreDataProperties.swift"; path = "CoreData/Tag+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		DA6FC1BF291EF3FF00800EAC /* Angel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Angel+CoreDataClass.swift"; path = "CoreData/Angel+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		DA6FC1C0291EF3FF00800EAC /* Angel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Angel+CoreDataProperties.swift"; path = "CoreData/Angel+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		DA6FC1C3291FBFB200800EAC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		DA4C83FF2919823500D603AA = {
 			isa = PBXGroup;
 			children = (
+				DA6FC1C3291FBFB200800EAC /* .gitignore */,
 				DA6FC18A291C468600800EAC /* DataClasses */,
 				DA4C8433291A892100D603AA /* Extensions.swift */,
 				DA4C840A2919823500D603AA /* KatalogWK */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4C84192919823600D603AA /* Preview Assets.xcassets in Resources */,
+				DA6FC1C4291FBFB200800EAC /* .gitignore in Resources */,
 				DA4C84152919823600D603AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
