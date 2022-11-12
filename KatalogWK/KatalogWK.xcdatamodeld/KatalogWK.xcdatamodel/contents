@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Angel" representedClassName="Angel" syncable="YES">
+        <attribute name="discontinued" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="itemNr" attributeType="String" defaultValueString="xxx"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String" defaultValueString="ERROR ANGEL TITLE"/>
+        <relationship name="owner" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Owner" inverseName="angels" inverseEntity="Owner"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="Owner" representedClassName="Owner" syncable="YES">
+        <attribute name="id" attributeType="UUID" defaultValueString="6143CE32-4D57-4093-A72B-EBCB03BB27FD" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="possession" optional="YES" attributeType="Transformable"/>
+        <relationship name="angels" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Angel" inverseName="owner" inverseEntity="Angel"/>
+    </entity>
 </model>
