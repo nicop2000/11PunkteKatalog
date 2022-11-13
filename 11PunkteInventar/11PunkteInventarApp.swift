@@ -14,7 +14,7 @@ struct ElfPunkteInventarApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Tabs()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

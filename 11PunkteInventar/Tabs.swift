@@ -9,7 +9,7 @@
 import CoreData
 import SwiftUI
 
-struct ContentView: View {
+struct Tabs: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     var body: some View {

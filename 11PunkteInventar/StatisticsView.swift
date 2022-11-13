@@ -24,6 +24,7 @@ struct StatisticsView: View {
 
                     })
                 }
+                .padding(.top, 10)
                 Text("\(angelOwner.reduce(0) { $0 + $1.count }) Engel insgesamt")
                     .padding(.bottom, 10)
                     .padding(.trailing, 10)
