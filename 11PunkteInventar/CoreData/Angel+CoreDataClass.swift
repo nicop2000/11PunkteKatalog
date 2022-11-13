@@ -6,10 +6,8 @@
 //
 //
 
-import Foundation
 import CoreData
+import Foundation
 
 @objc(Angel)
-public class Angel: NSManagedObject {
-
-}
+public class Angel: NSManagedObject {}
